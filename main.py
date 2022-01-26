@@ -1,9 +1,10 @@
+import os
 from selenium import webdriver
 from time import sleep
 
-CHROME_DRIVER_PATH = '/home/msmickersgill/metabot-docker/chromedriver'
-INSTA_EMAIL = 'mariasmickersgill@live.com'
-INSTA_PASSWORD = 'rosebud22'
+CHROME_DRIVER_PATH = os.environ['CHROME_DRIVER_PATH']
+INSTA_EMAIL = os.environ['INSTAGRAM_EMAIL']
+INSTA_PASSWORD = os.environ['INSTAGRAM_PASSWORD']
 ACCOUNT_TO_SCRAPE = 'https://www.instagram.com/reductress/'
 
 class InstaFollowers: 
